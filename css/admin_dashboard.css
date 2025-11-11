@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"poppins",sans-serif;
+}
+body{
+    background-color: #c9d6ff;
+    background:linear-gradient(to right,#e2e2e2,#c9d6ff);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b6c5f8;
+    padding:1.5rem;
+    border-radius:10px;
+    box-shadow:0 20px 35px rgba(160, 160, 238, 0.9);
+}
+/* logo */
+
+.logo {
+    padding-right: 55%;
+    font-size: 35px;
+    color: rgb(77, 32, 32);
+ }
+/*  */
+ul.main-nav {
+    font-size: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul.main-nav li {
+    position: relative;
+}
+
+ul.main-nav li a {
+    display: block;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+ul.main-nav li a:hover {
+    color: rgb(16, 73, 244);
+}
+
+/* Dropdown styles */
+ul.main-nav li:hover > .sub-nav {
+    display: block;
+}
+
+ul.sub-nav {
+    border-radius: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #b9c7f3;
+    display: none;
+    min-width: 200px;
+    ;transition: all 0.3s ease-in-out;
+}
+ul.sub-nav:hover {
+    box-shadow: 0 20px 35px rgba(46, 46, 52, 0.6);
+    transform: translateY(-7px);
+}
+
+ul.sub-nav li a {
+    padding: 12px;
+    color:  #000000;
+    text-decoration: none;
+}
+
+ul.sub-nav li a:hover {
+    background-color:#c7d0f0;
+}
+
+/* Container style */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Issued Section Styling */
+.issued {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    margin: 15px;
+    box-shadow: 0 20px 35px rgba(148, 216, 218, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for .issued */
+.issued:hover {
+    box-shadow: 0 30px 45px rgba(148, 216, 218, 0.8);
+    transform: translateY(-10px);
+}
+
+/* Inner content styling */
+.issued h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Card text styling */
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Button style */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.vib {
+    text-decoration: none;
+    /* background-color: #4CAF50; */
+    background-color: #00bcd4;
+    /* color: #fff; */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vib:hover {
+    /* background-color: #45a049; */
+    background-color: #008c9e;
+    transform: scale(1.05);
+}
