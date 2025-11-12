@@ -44,8 +44,11 @@ CREATE TABLE `issued_books` (
    FOREIGN KEY (book_id) REFERENCES books (book_id)
 );
 
+-- admin Email:admin@gmail.com , password :admin
+INSERT INTO `admins`(`id`, `name`, `email`, `password`) VALUES (1,'Admin','admin@gmail.com','21232f297a57a5a743894a0e4a801fc3')
 
 -- authors
 -- INSERT INTO `authors`(`author_id`, `author_name`) VALUES (1,'Bhupendra Singh Saud');
 -- INSERT INTO `authors`(`author_id`, `author_name`) VALUES (2,'Arjun Singh Saud');
 -- INSERT INTO `authors`(`author_id`, `author_name`) VALUES (3,'Ramesh Singh Saud');
+
